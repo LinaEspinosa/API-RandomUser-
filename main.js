@@ -25,15 +25,6 @@ const getRandomInt = (min, max) => {
     return Math.floor(Math.random() * (max - min)) + min;
 }
 
-// function listener() {
-//     const female = document.querySelector('.female').value
-
-//     if (female){
-//         female.addEventListener('click', loadFemale())
-
-//     }
-//     console.log(female);
-// }
 const loadFemale = async (id) => {
     console.log('entro');
     const res = await axios(`https://randomuser.me/api/?gender=female`)
@@ -50,7 +41,6 @@ const loadMale = async (id) => {
 
     
 }
-
 
 const dataPerson = (data) => {
     const person = {
@@ -88,8 +78,6 @@ const axiosApi = async (id) => {
         console.log(error)
     }
 }
-
-
 const pintarUser = (person) => {
     const container = document.querySelector('#container')
     const template = document.querySelector('#template-card').content
