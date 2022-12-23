@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random User</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./style.css">
+    <!-- Icons -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js" defer></script>
+</head>
+<body>
+    <header class="header">
+        <h1>GENERADOR DE USUARIOS ALEATORIOS</h1>
+    </header>
+    <select class="select-user" name="select">
+        <option value="value1" selected>Select gender</option>
+        <option class="female" value="female">Female</option>
+        <option class="male" value="male">Male</option>
+      </select>
+    <main id="container">
+    </main>
+    <template id="template-card">
+        <article>
+            <div class="card-user">
+                <div >
+                    <img src="https://randomuser.me/api/portraits/men/47.jpg" alt="" class="card-img" >
+                </div>
+                <div class="content-information">
+                    <div class="name">
+                        <h5>Hi, my name is</h5>
+                        <h3>Loremal@gmail.com</h3>
+                    </div>
+                    <div class="email">
+                        <h5>My email address is</h5>
+                        <h3>Loremal@gmail.com</h3>
+                    </div>
+                    <div class="birthday">
+                        <h5>My birthday is</h5>
+                        <h3>Loremal@gmail.com</h3>
+                    </div>
+                    <div class="address">
+                        <h5>My address is</h5>
+                        <h3>Loremal@gmail.com</h3>
+                    </div>
+                    <div class="phone">
+                        <h5>My phone number is</h5>
+                        <h3>Loremal@gmail.com</h3>
+                    </div>
+                    <div class="password">
+                        <h5>My password is</h5>
+                        <h3>Loremal@gmail.com</h3>
+                    </div>
+                </div>
+                <div class="card-information">
+                    <span class="icon-name">
+                        <ion-icon name="person-outline"></ion-icon>
+                    </span>
+                    <span class="icon-email"><ion-icon name="mail-outline"></ion-icon></span>
+                    <span class="icon-birthday"><ion-icon name="calendar-outline"></ion-icon></span>
+                    <span class="icon-address"><ion-icon name="location-outline"></ion-icon></span>
+                    <span class="icon-phone"><ion-icon name="call-outline"></ion-icon></span>
+                    <span class="icon-password"><ion-icon name="lock-closed-outline"></ion-icon></span>
+                </div>
+        
+                
+            </div>
+        </article>
+    </template>
+    
+    
+    <!-- Axios -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+    <script src="./main.js"></script>
+</body>
+</html>
