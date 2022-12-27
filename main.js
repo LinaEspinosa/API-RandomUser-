@@ -85,12 +85,12 @@ const pintarUser = (person) => {
     const fragment = document.createDocumentFragment()
 
     clone.querySelector('.card-img').setAttribute('src', person.image)
-    clone.querySelectorAll('.content-information h3')[0].textContent = `${person.name.title} ${person.name.first} ${person.name.last} `
-    clone.querySelectorAll('.content-information h3')[1].textContent = `${person.email}  `
-    clone.querySelectorAll('.content-information h3')[2].textContent = `${person.birthday}  `
-    clone.querySelectorAll('.content-information h3')[3].textContent = `${person.address.city} (${person.address.country}) State - ${person.address.state} `
-    clone.querySelectorAll('.content-information h3')[4].textContent = `${person.phone} `
-    clone.querySelectorAll('.content-information h3')[5].textContent = `${person.password} `
+    clone.querySelectorAll('.card-information h3')[0].textContent = `${person.name.title} ${person.name.first} ${person.name.last} `
+    clone.querySelectorAll('.card-information h3')[1].textContent = `${person.email}  `
+    clone.querySelectorAll('.card-information h3')[2].textContent = `${person.birthday}  `
+    clone.querySelectorAll('.card-information h3')[3].textContent = `${person.address.city} (${person.address.country}) State-${person.address.state} `
+    clone.querySelectorAll('.card-information h3')[4].textContent = `${person.phone} `
+    clone.querySelectorAll('.card-information h3')[5].textContent = `${person.password} `
 
     fragment.appendChild(clone)
     container.appendChild(fragment)

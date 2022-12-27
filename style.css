@@ -51,7 +51,6 @@ select {
     -moz-appearance: none;
     -webkit-appearance: none;
     appearance: none;
-    /* color:var(--colorTextContent); */
     position: absolute;
     top:5rem;
     border: 2px solid red;
@@ -59,7 +58,6 @@ select {
     right: 30rem;
     border:none;
     border-radius: 2rem;
-    /* background-color: var(--bgcHeader); */
     
 }
 .card-user{
@@ -75,32 +73,35 @@ select {
 box-shadow: 3px -1px 20px -9px rgba(196,89,36,1);
 }
 .card-user  img{
-    margin-top: 2rem;
+    margin: 2rem 0;
     border-radius: 50%;
     
     
 }
 
-.card-user .content-information{
-    margin-top: 2rem;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-}
-.card-user .content-information h5{
+.card-user .card-information h5{
     font-size:1rem;
     color:var(--colorTextContent);
+    position: absolute;
+    top: 11rem;
+    left:45%;
+    right:30%;
 
 }
-.card-user .content-information h3{
+.card-user .card-information h3{
     font-size: 1.5rem;
     color:var(--bgcHeader);
+    position: absolute;
+    top: 12rem;
+    left:35%;
+    right:20%;
 }
 .card-user  .card-information{
     max-width:100%;
-    margin: 3rem 0;
+    margin: 4rem 0;
     font-size:2rem;
     color: var(--colorIcons);
+    cursor: pointer;
 
 }
 
@@ -108,12 +109,21 @@ span{
     padding-left: 2rem;
 }
 
-/* .card-user .content-information{
-    display:none;
-} */
 
-.card-user .card-information .icon-name:hover   {
-    display:flex;
-    cursor:pointer;
+.card-user .card-information {
+    display: flex;
+    
+}
+
+.card-user .card-information .icon .hover-icon{
+    display: flex;
+    visibility: hidden;
+}
+.card-user .card-information .icon:hover{
+    color:var(--bgcHeader);
+}
+.card-user .card-information .icon:hover .hover-icon{
+    visibility: visible;
+
     
 }
